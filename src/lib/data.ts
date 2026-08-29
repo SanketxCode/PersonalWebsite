@@ -7,7 +7,7 @@ export const siteConfig = {
   github: "https://github.com/Sanket-777",
   linkedin: "https://linkedin.com/in/sanketkumbhar",
   leetcode: "https://leetcode.com/u/sanketkumbhar142/",
-  resume: "/resume.pdf",
+  resume: "https://drive.google.com/file/d/1X3V1b5PneXZOTYIZPzFYgeiFV1vNI-w2/view?usp=sharing",
   headline: "Building reliable software at scale.",
   intro:
     "Full Stack Developer at Barclays with a strong foundation in modern web architecture, backend engineering, and developer tooling. I focus on building systems that are maintainable, performant, and secure.",
