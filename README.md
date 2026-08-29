@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Portfolio
 
-## Getting Started
+Modern, premium portfolio website for Sanket Kumbhar — Software Engineer at Barclays.
 
-First, run the development server:
+## Features
+
+- **Dark-first design** with premium aesthetics
+- **Fully responsive** — mobile, tablet, desktop
+- **Smooth scroll animations** with intersection observer
+- **Modern tech stack** — Next.js 16, React 19, TypeScript, Tailwind CSS v4
+- **SEO optimized** with metadata and Open Graph tags
+- **Zero console errors** — production-ready
+- **Accessibility focused** — semantic HTML, ARIA labels, keyboard navigation
+
+## Tech Stack
+
+- **Framework**: Next.js 16.3 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **Icons**: Lucide React + custom SVG brand icons
+- **Fonts**: Geist Sans & Geist Mono
+- **Deployment Ready**: Vercel, Netlify, or any Node.js host
+
+## Local Development
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit `http://localhost:3000` after starting the dev server.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/
+│   ├── layout.tsx          # Root layout with metadata
+│   ├── page.tsx            # Home page
+│   └── globals.css         # Global styles & design tokens
+├── components/
+│   ├── Navbar.tsx          # Fixed navigation with mobile menu
+│   ├── Hero.tsx            # Hero section with CTAs
+│   ├── About.tsx           # About section
+│   ├── Experience.tsx      # Work experience timeline
+│   ├── Projects.tsx        # Project showcase
+│   ├── Skills.tsx          # Technical skills grid
+│   ├── Education.tsx       # Education credentials
+│   ├── Achievements.tsx    # Competitive programming achievements
+│   ├── Contact.tsx         # Contact section
+│   ├── Footer.tsx          # Footer with social links
+│   ├── Reveal.tsx          # Scroll reveal animation component
+│   └── Icons.tsx           # Custom brand icons (GitHub, LinkedIn, LeetCode)
+└── lib/
+    └── data.ts             # Site content and configuration
+```
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+All content is centralized in `src/lib/data.ts`. Update your:
+- Personal information
+- Work experience
+- Projects
+- Skills
+- Education
+- Achievements
+- Social links
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Design tokens (colors, spacing, typography) are in `src/app/globals.css` under `:root`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Resume
 
-## Deploy on Vercel
+Place your resume PDF as `public/resume.pdf` so the Resume button links work.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Vercel (Recommended)
+```bash
+npm install -g vercel
+vercel
+```
+
+### Netlify
+```bash
+npm run build
+# Deploy the .next folder
+```
+
+### Self-hosted
+```bash
+npm run build
+npm start
+```
+
+## Performance
+
+- Static generation for instant page loads
+- Optimized fonts with `next/font`
+- CSS-in-CSS with Tailwind v4 (faster than v3)
+- Minimal JavaScript bundle
+- Intersection Observer for scroll animations (no heavy animation libraries)
+
+## Browser Support
+
+- Chrome/Edge (latest)
+- Firefox (latest)
+- Safari 15+
+- Mobile browsers (iOS Safari, Chrome Mobile)
+
+---
+
+Built with Next.js 16, TypeScript, and Tailwind CSS.
